@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/julien-dev-29/graphql#readme",
   "devDependencies": {
+    "@playwright/test": "^1.61.1",
     "jsdom": "^29.1.1",
     "vitest": "^4.1.9"
   }
