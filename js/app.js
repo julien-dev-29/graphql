@@ -53,7 +53,6 @@ async function renderDashboard() {
   render(`<div class="loading">Loading...</div>`)
 
   try {
-    const userId = parseJwt(getToken()).sub || parseJwt(getToken()).id
     const [userData, xpData, resultData, auditData] = await Promise.all([
       query(`{ user { id login } }`),
       query(`{ transaction(where: { type: { _eq: "xp" } }) { amount createdAt path } }`),
