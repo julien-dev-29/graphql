@@ -1,7 +1,7 @@
 import { getToken } from './auth.js'
 import { getMockData } from './mock.js'
 
-const GRAPHQL_URL = 'https://((DOMAIN))/api/graphql-engine/v1/graphql'
+const GRAPHQL_URL = 'http://localhost:3000/api/graphql'
 const MOCK_MODE = true // Set to false before deploying to production
 
 export async function query(queryStr, variables = {}) {
