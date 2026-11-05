@@ -1,0 +1,1 @@
+INSERT INTO objects (name, description, created_at, updated_at) VALUES ('Object Name', 'Object Description', NOW(), NOW());

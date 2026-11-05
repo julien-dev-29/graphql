@@ -1,10 +1,10 @@
 {
-  "type": "module",
   "name": "graphql",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -14,15 +14,20 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/julien-dev-29/graphql/issues"
   },
   "homepage": "https://github.com/julien-dev-29/graphql#readme",
   "dependencies": {
+    "@apollo/server": "^5.5.1",
+    "cors": "^2.8.6",
     "express": "^5.3.0",
     "graphql": "^16.14.2",
     "graphql-http": "^1.23.1",
-    "helmet": "^8.3.0",
     "ruru": "^2.0.3"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19"
   }
 }
